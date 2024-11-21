@@ -4,17 +4,21 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  
   <link rel="stylesheet" href="index.css">
-
-  <title>Document</title>
+  <title>Image Upload</title>
 </head>
 <body>
-  
-  <form id="imageForm">
-    <input id="imageInput" type="file" accept="image/*">
-    <button type="submit">Upload</button>
-  </form>
+
+  <div class="container">
+    <h1>Upload Your Image</h1>
+    <p>Please select an image file to upload:</p>
+    <form id="imageForm">
+      <label for="imageInput" class="custom-file-label">Choose File</label>
+      <input id="imageInput" type="file" accept="image/*" class="file-input">
+      <button type="submit" class="submit-button">Upload</button>
+    </form>
+  </div>
 
   <script src="index.js"></script>
 
